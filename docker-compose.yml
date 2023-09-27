@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  snake:
+    image: 'rahlou/game_docker_repo'
+    environment:
+      - "PORT:3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
