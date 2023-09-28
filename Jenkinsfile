@@ -15,7 +15,9 @@ node('ubuntu-appserver-3120')
     stage('Post-to -dockerhub')
     {
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
+        {
         app.push("latest")
+        }
     }
     
     stage('Pull-image-server')
