@@ -1,4 +1,4 @@
-node('flute-srv2')
+node('ubuntu-appserver-3120')
 {
     def app
     stage('Cloning Git')
